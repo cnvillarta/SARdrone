@@ -68,43 +68,6 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QSplitter" name="splitter_2">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>40</y>
-      <width>291</width>
-      <height>68</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-    <widget class="QLabel" name="aids_logo">
-     <property name="font">
-      <font>
-       <family>Audiowide</family>
-       <pointsize>28</pointsize>
-       <kerning>true</kerning>
-      </font>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2c365d;&quot;&gt;AIDS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="app_name">
-     <property name="font">
-      <font>
-       <family>Barlow Medium</family>
-       <pointsize>12</pointsize>
-       <kerning>true</kerning>
-      </font>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2c365d;&quot;&gt;Air-based Inspection Deployment System&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
@@ -126,14 +89,14 @@
    <widget class="QLabel" name="lbl_response">
     <property name="geometry">
      <rect>
-      <x>156</x>
-      <y>123</y>
+      <x>180</x>
+      <y>130</y>
       <width>311</width>
       <height>20</height>
      </rect>
     </property>
     <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
       <horstretch>5</horstretch>
       <verstretch>5</verstretch>
      </sizepolicy>
@@ -159,7 +122,7 @@
     <property name="font">
      <font>
       <family>Calibri</family>
-      <pointsize>11</pointsize>
+      <pointsize>10</pointsize>
      </font>
     </property>
     <property name="text">
@@ -172,13 +135,77 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
+      <x>200</x>
+      <y>40</y>
+      <width>293</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="aids_logo">
+       <property name="minimumSize">
+        <size>
+         <width>291</width>
+         <height>43</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>291</width>
+         <height>43</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Audiowide</family>
+         <pointsize>28</pointsize>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2c365d;&quot;&gt;AIDS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="app_name">
+       <property name="minimumSize">
+        <size>
+         <width>291</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>291</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Barlow Medium</family>
+         <pointsize>12</pointsize>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2c365d;&quot;&gt;Air-based Inspection Deployment System&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
       <x>130</x>
       <y>157</y>
       <width>344</width>
       <height>33</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="username_layout">
      <item>
       <widget class="QLabel" name="user_icon">
        <property name="sizePolicy">
@@ -280,7 +307,7 @@
       <height>33</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QHBoxLayout" name="password_layout">
      <item>
       <widget class="QLabel" name="password_icon">
        <property name="text">
@@ -353,7 +380,7 @@
       <height>33</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="forgotpass_layout">
      <item>
       <widget class="QLabel" name="lbl_forgot">
        <property name="sizePolicy">
