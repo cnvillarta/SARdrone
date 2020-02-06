@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1071</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1071</width>
+    <height>739</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1071</width>
+    <height>739</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AIDS – Operations History [Administrator]</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Resources/logo_svg.svg</normaloff>../../Resources/logo_svg.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="table_pilotOps">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>1011</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>203</red>
+       <green>203</green>
+       <blue>203</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Date</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>203</red>
+       <green>203</green>
+       <blue>203</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Location</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>203</red>
+       <green>203</green>
+       <blue>203</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Actions</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>203</red>
+       <green>203</green>
+       <blue>203</blue>
+      </color>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>690</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Helvetica</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+	background-color: rgb(202, 202, 202);
+border: 1.2px solid #ABABAB;
+outline: none;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(171, 171, 171);
+outline: none;
+border: none;
+}
+
+QPushButton:pressed{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+outline: none;
+border: none;
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_pilotHistory">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>501</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>29</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Operations History</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>361</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="lbl_user">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_logout">
+       <property name="minimumSize">
+        <size>
+         <width>121</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>121</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Helvetica</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+	background-color: rgb(202, 202, 202);
+border: 1.2px solid #ABABAB;
+outline: none;}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(171, 171, 171);
+outline: none;
+border: none;
+}
+
+QPushButton:pressed{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+outline: none;
+border: none;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>btn_logout</tabstop>
+  <tabstop>table_pilotOps</tabstop>
+  <tabstop>btn_back</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
